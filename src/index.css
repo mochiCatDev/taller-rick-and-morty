@@ -94,3 +94,15 @@
 .personaje-card.death .personaje-details span {
 	color: #d90429;
 }
+
+.personaje-card.alive {
+	background: rgba(180, 255, 200, 0.85);
+}
+
+.personaje-card.alive .personaje-imagen {
+	filter: saturate(110%) brightness(100%);
+}
+
+.personaje-card.alive .personaje-details span {
+	color: #00b090;
+}
