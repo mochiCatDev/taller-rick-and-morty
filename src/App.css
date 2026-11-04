@@ -1,0 +1,9 @@
+.cartas-personajes {
+	width: 90%;
+	max-width: 1200px;
+	min-width: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	gap: 20px;
+}

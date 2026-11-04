@@ -17,9 +17,11 @@ function App() {
 
 	return (
     	<>
-    		{personajes.map(p => (
-    			<PersonajeCard personaje={p} />
-    		))}
+    		<div className="cartas-personajes">
+    			{personajes.map(p => (
+    				<PersonajeCard personaje={p} />
+    			))}
+    		</div>
     	</>
   	)
 }

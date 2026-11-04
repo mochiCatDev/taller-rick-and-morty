@@ -1,9 +1,11 @@
+import './PersonajeCard.css';
+
 function PersonajeCard({ personaje }) {
 	return(
 		<div className="personaje-card">
-			<h1>{personaje.name}</h1>
+			<h3 class="personaje-nombre">{personaje.name}</h3>
 			<img src={personaje.image} alt={personaje.name}/>
-			<div>
+			<div className="personaje-details">
 				<ul>
 					<li><span>Estado: </span>{personaje.status}</li>
 					<li><span>Especie: </span>{personaje.species}</li>

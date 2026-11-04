@@ -1,0 +1,11 @@
+.personaje-card {
+	border: 1px solid #000;
+	width: 260px;
+	height: 500px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.personaje-card .personaje-details ul{
+	list-style: none;
+}
