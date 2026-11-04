@@ -1,11 +1,27 @@
-import './App.css'
+import { useState, useEffect } from 'react';
+import PersonajeCard from './components/PersonajeCard';
+import './App.css';
 
 function App() {
-  return (
-    <>
-    	Proyecto Inicializado
-    </>
-  )
+	const [personajes, setPersonajes] = useState([]);
+
+	useEffect(() => {
+		const obtenerPersonajes = async () => {
+			const response = await fetch("https://rickandmortyapi.com/api/character");
+			const datos = await response.json();
+			setPersonajes(datos.results);
+		}
+
+		obtenerPersonajes();
+	}, []);
+
+	return (
+    	<>
+    		{personajes.map(p => (
+    			<PersonajeCard personaje={p} />
+    		))}
+    	</>
+  	)
 }
 
 export default App
