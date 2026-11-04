@@ -1,17 +1,24 @@
+import React from 'react';
 import './PersonajeCard.css';
 
 function PersonajeCard({ personaje }) {
 	return(
 		<div className="personaje-card">
-			<h3 class="personaje-nombre">{personaje.name}</h3>
-			<img src={personaje.image} alt={personaje.name}/>
+			<h3 className="personaje-nombre">{personaje.name}</h3>
+			<div className="imagen-contenedor">
+				<img 
+					className="personaje-imagen" 
+					src={personaje.image} 
+					alt={personaje.name}
+				/>
+			</div>
 			<div className="personaje-details">
 				<ul>
-					<li><span>Estado: </span>{personaje.status}</li>
-					<li><span>Especie: </span>{personaje.species}</li>
-					<li><span>Genero: </span>{personaje.gender}</li>
-					<li><span>Origen: </span>{personaje.origin.name}</li>
-					<li><span>Localidad: </span>{personaje.location.name}</li>
+					<li><span>Estado:</span> {personaje.status}</li>
+					<li><span>Especie:</span> {personaje.species}</li>
+					<li><span>Género:</span> {personaje.gender}</li>
+					<li><span>Origen:</span> {personaje.origin.name}</li>
+					<li><span>Localidad:</span> {personaje.location.name}</li>
 				</ul>
 			</div>
 		</div>
