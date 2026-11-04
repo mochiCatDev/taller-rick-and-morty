@@ -82,3 +82,15 @@
 	color: #ff477e;
 	text-transform: uppercase;
 }
+
+.personaje-card.death {
+	background: rgba(255, 180, 180, 0.65);
+}
+
+.personaje-card.death .personaje-imagen {
+	filter: sepia(100%) hue-rotate(300deg) saturate(100%);
+}
+
+.personaje-card.death .personaje-details span {
+	color: #d90429;
+}

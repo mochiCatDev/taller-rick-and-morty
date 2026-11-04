@@ -2,7 +2,7 @@ import React from 'react';
 
 function PersonajeCard({ personaje }) {
 	return(
-		<div className="personaje-card">
+		<div className={`personaje-card ${personaje.status === 'Dead' ? 'death' : ''}`}>
 			<h3 className="personaje-nombre">{personaje.name}</h3>
 			<div className="imagen-contenedor">
 				<img 
