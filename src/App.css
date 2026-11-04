@@ -1,9 +1,41 @@
+body {
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff;
+	min-height: 100vh;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #b5ffff;
+	text-shadow: 3px 3px 0px #ff477e, 6px 6px 0px #1a1a2e;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffb7ff;
+	text-shadow: 2px 2px 0px #1a1a2e;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
 .cartas-personajes {
 	width: 90%;
 	max-width: 1200px;
-	min-width: 100px;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 20px auto;
-	gap: 20px;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 25px;
 }

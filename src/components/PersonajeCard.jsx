@@ -1,5 +1,4 @@
 import React from 'react';
-import './PersonajeCard.css';
 
 function PersonajeCard({ personaje }) {
 	return(
