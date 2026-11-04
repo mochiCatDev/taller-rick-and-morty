@@ -39,3 +39,45 @@ h2 {
 	margin: 0 auto;
 	gap: 25px;
 }
+
+.footer-autor {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	padding: 20px 0;
+}
+
+.footer-contenido {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 10px 25px;
+	border: 3px solid #1a1a2e;
+	border-radius: 50px;
+	box-shadow: 4px 4px 0px #1a1a2e;
+	transition: transform 0.3s ease;
+}
+
+.footer-contenido:hover {
+	transform: translateY(-3px);
+	box-shadow: 6px 6px 0px #1a1a2e;
+}
+
+.footer-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #1a1a2e;
+}
+
+.footer-texto {
+	font-size: 15px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #1a1a2e;
+	letter-spacing: 1px;
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PersonajeCard from './components/PersonajeCard';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     				<PersonajeCard personaje={p} />
     			))}
     		</div>
+    		<Footer />
     	</>
   	)
 }
